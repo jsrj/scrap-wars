@@ -3,3 +3,4 @@ node_modules
 .idea
 package-lock.json
 *.iml
+yarn-error.log
