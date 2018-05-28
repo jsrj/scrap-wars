@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Meta -->
+        <!-- Meta -->
+
         <title><%= title %></title>
+
+        <!-- Styles -->
         <link rel='stylesheet' href='/css/style.css' />
+        <!-- Styles -->
+
+        <!-- Preloaded Scripts -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/vendor/phaser.js"></script>
+        <!-- Preloaded Scripts -->
     </head>
     <body>
+        <!-- Header Area -->
         <h1><%= title %></h1>
         <p>Welcome to <%= title %></p>
+        <!-- Header Area -->
 
-        <script src="/socket.io/socket.io.js"></script>
+        <!-- View Interpolation -->
+        <!-- View Interpolation -->
+
+        <!-- Footer Area -->
+        <!-- Footer Area -->
+
+        <!-- WebSocket Scripts -->
         <script src="/js/SocketClient.js"></script>
+        <!-- WebSocket Scripts -->
+
+        <!-- Phaser Scripts -->
+        <script src="/js/game/mainState.js"></script>
+        <script src="/js/gameManager.js"></script>
+        <!-- Phaser Scripts -->
     </body>
 </html>
