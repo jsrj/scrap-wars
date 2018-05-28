@@ -1,11 +1,11 @@
-/* Package Requires */
+/* Dependencies */
 const createError    = require('http-errors');
 const express        = require('express');
 const path           = require('path');
 const cookieParser   = require('cookie-parser');
 const logger         = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
-/* Package Requires */
+/*Dependencies */
 
 /* Router Definitions */
 const indexRouter = require('./routes/index');
