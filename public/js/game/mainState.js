@@ -1,19 +1,15 @@
 // Create the state that will contain the whole game
-const mainState = {
+window.onload = function() {
 
-    // Here we preload the assets
-    preload: function() {
-    },
-
-    // Here we create the game
-    create: function() {
-    },
-
-    // Here we update the game 60 times per second
-    update: function() {
-    },
+    const mainConfig = {
+        type: Phaser.AUTO,
+        width:  800,
+        height: 600,
+        scene: {
+            preload: mainPreload,
+            create:  mainCreate,
+            update:  mainUpdate
+        }
+    };
+    const game = new Phaser.Game(mainConfig);
 };
-
-const game = new Phaser.Game(500, 200);
-game.state.add('main', mainState);
-game.state.start('main');

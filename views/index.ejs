@@ -12,16 +12,16 @@
 
         <!-- Preloaded Scripts -->
         <script src="/socket.io/socket.io.js"></script>
-        <script src="/vendor/phaser.js"></script>
+        <script src="/vendor/phaser.js"      ></script>
+        <script src="/vendor/require.js"     ></script>
         <!-- Preloaded Scripts -->
     </head>
     <body>
         <!-- Header Area -->
-        <h1><%= title %></h1>
-        <p>Welcome to <%= title %></p>
         <!-- Header Area -->
 
         <!-- View Interpolation -->
+        <canvas id="render-area"></canvas>
         <!-- View Interpolation -->
 
         <!-- Footer Area -->
@@ -32,8 +32,11 @@
         <!-- WebSocket Scripts -->
 
         <!-- Phaser Scripts -->
-        <script src="/js/game/mainState.js"></script>
-        <script src="/js/gameManager.js"></script>
+        <script src="/js/game/phases/preload.js"></script>
+        <script src="/js/game/phases/create.js" ></script>
+        <script src="/js/game/phases/update.js" ></script>
+        <script src="/js/game/mainState.js"     ></script>
+        <script src="/js/gameManager.js"        ></script>
         <!-- Phaser Scripts -->
     </body>
 </html>
